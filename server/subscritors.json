@@ -1,0 +1,34 @@
+{
+  
+  "subscritors":[
+    {
+      "name": "Pickle",
+      "lastName": "Rick",
+      "age": "65",
+      "sport": "Kill rats",
+      "id":1
+    },
+    {
+      "name": "Artur",
+      "lastName": "King",
+      "age": "23",
+      "sport": "Run",
+      "id":2
+    },
+    {
+      "name": "Bob",
+      "lastName": "Maley",
+      "age": "99",
+      "sport": "Soccer",
+      "id":3
+    },
+    {
+      "name": "Pink",
+      "lastName": "Panter",
+      "age": "45",
+      "sport": "Basket",
+      "id":4
+    }
+]
+
+}
