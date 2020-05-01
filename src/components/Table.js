@@ -1,14 +1,8 @@
-import React, { Fragment, useState} from 'react';
-
-
-
+import React, { Fragment} from 'react';
 
 const Table = ({object} )=> {  
 
-    
-
- 
-    return (
+   return (
         <Fragment>           
             <div className="container mt-5">
                 <table className="table table-striped table-dark table-bordered " >
@@ -34,8 +28,6 @@ const Table = ({object} )=> {
                     }
                 </table>
             </div>   
-         
-
         </Fragment>
     );
 }

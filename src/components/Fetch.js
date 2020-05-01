@@ -3,8 +3,6 @@ import axios from 'axios';
 import Table from './Table'
 import Sort from './Sort'
 
-
-
 const Fetch = () => {
 
     /*Variable to save the sort data */
@@ -33,7 +31,7 @@ const Fetch = () => {
     /*Declare variable to save the data of fetch */
     const [subscritors, setSubscritors] = useState([]);
     const [loading, setLoading] = useState(true);
-    
+    /*We are telling React that the component has to do something after rendering*/
     useEffect(() => {
         axios.get('https://json-server-now-nine.now.sh/db.json/')
             .then(res => {
@@ -46,15 +44,20 @@ const Fetch = () => {
                 console.log(err)
             })
     }, [])
+
     if (loading === true) {
         return <h1>Loading....</h1>
     }
     return (
         <>
             <Table object={subscritors} />
-            <button onClick={() => SortbyName(subscritors)}>Sort by name </button>
-            <button onClick={() => SortbyAge(subscritors)}>Sort by age </button>
-            <button onClick={() => SortbySport(subscritors)}>Sort by sport </button>
+            <div className="container mx-auto  pl-4 pr-4">
+                <div className="row">
+                    <button className=" col btn btn-info mx-1" onClick={() => SortbyName(subscritors)}>Sort by name </button>
+                    <button className="col btn btn-secondary mx-1" onClick={() => SortbyAge(subscritors)}>Sort by age </button>
+                    <button className="col btn btn-success mx-1" onClick={() => SortbySport(subscritors)}>Sort by sport </button>
+                </div>
+            </div>
         </>
     );
 }
