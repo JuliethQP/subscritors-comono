@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/subscritors-comono/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/subscritors-comono/static/js/main.de77777f.chunk.js",
+    "main.js.map": "/subscritors-comono/static/js/main.de77777f.chunk.js.map",
+    "runtime-main.js": "/subscritors-comono/static/js/runtime-main.8bb8c071.js",
+    "runtime-main.js.map": "/subscritors-comono/static/js/runtime-main.8bb8c071.js.map",
+    "static/js/2.1700df8c.chunk.js": "/subscritors-comono/static/js/2.1700df8c.chunk.js",
+    "static/js/2.1700df8c.chunk.js.map": "/subscritors-comono/static/js/2.1700df8c.chunk.js.map",
+    "index.html": "/subscritors-comono/index.html",
+    "precache-manifest.f9af232abedd11e8193a030050cfe38e.js": "/subscritors-comono/precache-manifest.f9af232abedd11e8193a030050cfe38e.js",
+    "service-worker.js": "/subscritors-comono/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/subscritors-comono/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.1700df8c.chunk.js.LICENSE.txt": "/subscritors-comono/static/js/2.1700df8c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bb8c071.js",
+    "static/js/2.1700df8c.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.de77777f.chunk.js"
+  ]
+}
