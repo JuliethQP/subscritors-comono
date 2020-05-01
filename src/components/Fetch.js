@@ -12,16 +12,25 @@ const Fetch = () => {
 
     /* Functions to sort data */
     const SortbyName = (data) => {
+        setsortedName([])
+        setsortAge([])
+        setsortSport([])
         setsortedName(data.sort((a, b) => (a.name > b.name) ? 1 : -1))
         return (<Table object={sortedName} />)
     }
 
     const SortbyAge = (data) => {
+        setsortedName([])
+        setsortAge([])
+        setsortSport([])
 
         setsortAge(data.sort((a, b) => (a.age > b.age) ? 1 : -1))
         return (<Table object={sortAge} />)
     }
     const SortbySport = (data) => {
+        setsortedName([])
+        setsortAge([])
+        setsortSport([])
 
         setsortSport(data.sort((a, b) => (a.sport > b.sport) ? 1 : -1))
         return (<Table object={sortSport} />)
