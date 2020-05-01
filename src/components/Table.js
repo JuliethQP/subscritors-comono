@@ -1,6 +1,13 @@
-import React, { Fragment } from 'react';
-import SortbyName from './SortName'
-const Table = ({object} )=> {    
+import React, { Fragment, useState} from 'react';
+
+
+
+
+const Table = ({object} )=> {  
+
+    
+
+ 
     return (
         <Fragment>           
             <div className="container mt-5">
@@ -13,7 +20,8 @@ const Table = ({object} )=> {
                             <td>Sport</td>
                         </tr>
                     </thead>
-                    {object.map(item => (
+                    {
+                    object.map(item => (
                         <tbody key={item.id}>
                             <tr>
                                 <td >{item.name}</td>
@@ -26,7 +34,7 @@ const Table = ({object} )=> {
                     }
                 </table>
             </div>   
-              <button onClick={()=>SortbyName (object)}>Sort by name </button>
+         
 
         </Fragment>
     );
