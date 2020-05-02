@@ -40,12 +40,12 @@ const Fetch = () => {
 
     if (loading === true){
         return (
-            <div class="d-flex justify-content-center mt-5">
-                <div class="spinner-border" style={{ width: '5rem', height: '5rem' }} role="status">
-                    <span class="sr-only">Loading...</span>
+            <div className="d-flex justify-content-center mt-5">
+                <div className="spinner-border" style={{ width: '5rem', height: '5rem' }} role="status">
+                    <span className="sr-only">Loading...</span>
                 </div>
-                <div class="spinner-grow" style={{ width: '5rem', height: '5rem' }} role="status">
-                    <span class="sr-only">Loading...</span>
+                <div className="spinner-grow" style={{ width: '5rem', height: '5rem' }} role="status">
+                    <span className="sr-only">Loading...</span>
                 </div>
             </div>
             )
