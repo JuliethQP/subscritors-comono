@@ -28,8 +28,6 @@ const Table = ({ object }) => {
                     }
                 </table>
             </div>
-
-
         </Fragment>
     );
 }

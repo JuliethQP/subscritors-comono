@@ -38,7 +38,7 @@ const Fetch = () => {
             })
     }, [])
 
-    if (loading === true) {
+    if (loading === true){
         return (
             <div class="d-flex justify-content-center mt-5">
                 <div class="spinner-border" style={{ width: '5rem', height: '5rem' }} role="status">
@@ -48,7 +48,7 @@ const Fetch = () => {
                     <span class="sr-only">Loading...</span>
                 </div>
             </div>
-        )
+            )
     }
     return (
         <Fragment>
@@ -58,7 +58,6 @@ const Fetch = () => {
                     <button className=" col btn btn-info mx-1" onClick={() => Sort(subscritors, 1)}>Sort by name </button>
                     <button className=" col btn btn-secondary mx-1 " onClick={() => Sort(subscritors, 2)}>Sort by age </button>
                     <button className=" col btn btn-success mx-1 " onClick={() => Sort(subscritors, 3)}>Sort by sport </button>
-
                 </div>
             </div>
         </Fragment>
