@@ -18,7 +18,7 @@ const Fetch = () => {
         setsortSport(data.sort((a, b) => (a.sport > b.sport) ? 1 : -1));
     }
 
-    /*Declare variable to save the data of fetch */
+    /*Declare variables to save fetch data */
 
     const [subscritors, setSubscritors] = useState([]);
     const [loading, setLoading] = useState(true);
