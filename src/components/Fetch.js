@@ -1,4 +1,4 @@
-import React, {Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
 import Table from './Table'
 
@@ -10,14 +10,14 @@ const Fetch = () => {
     const [sortSport, setsortSport] = useState([])
 
     /* Functions to sort data */
-    const Sort = (data,arg) => {
+    const Sort = (data, arg) => {
         setsortedName([])
         setsortSport([])
-        setsortAge([])   
-        arg == 1 ? setsortedName(data.sort((a, b) =>  (a.name > b.name) ? 1 : -1)) :
-        arg==2?  setsortAge(data.sort((a, b) => (a.age > b.age) ? 1 : -1)) :
+        setsortAge([])
+        arg == 1 ? setsortedName(data.sort((a, b) => (a.name > b.name) ? 1 : -1)) :
+        arg == 2 ? setsortAge(data.sort((a, b) => (a.age > b.age) ? 1 : -1)) :
         setsortSport(data.sort((a, b) => (a.sport > b.sport) ? 1 : -1));
-    }  
+    }
 
     /*Declare variable to save the data of fetch */
 
@@ -40,16 +40,25 @@ const Fetch = () => {
     }, [])
 
     if (loading === true) {
-        return <h1>Loading....</h1>
+        return (
+            <div className="container ml-5 mt-5" width="50">
+                <div class="spinner-border text-success" role="status">
+                    <p>Loading</p>
+
+                </div>
+
+            </div>
+
+        )
     }
     return (
         <Fragment>
             <Table object={subscritors} />
             <div className="container mx-auto  pl-4 pr-4">
                 <div className="row">
-                    <button className=" col btn btn-info mx-1"onClick={()=>Sort(subscritors,1)}>Sort by name </button>
-                    <button className=" col btn btn-secondary mx-1 " onClick={() => Sort(subscritors,2)}>Sort by age </button>
-                    <button className=" col btn btn-success mx-1 " onClick={() => Sort(subscritors,3)}>Sort by sport </button>             
+                    <button className=" col btn btn-info mx-1" onClick={() => Sort(subscritors, 1)}>Sort by name </button>
+                    <button className=" col btn btn-secondary mx-1 " onClick={() => Sort(subscritors, 2)}>Sort by age </button>
+                    <button className=" col btn btn-success mx-1 " onClick={() => Sort(subscritors, 3)}>Sort by sport </button>
 
                 </div>
             </div>
