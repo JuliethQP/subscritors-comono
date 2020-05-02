@@ -8,7 +8,6 @@ const Fetch = () => {
     const [sortedName, setsortedName] = useState([])
     const [sortAge, setsortAge] = useState([])
     const [sortSport, setsortSport] = useState([])
-
     /* Functions to sort data */
     const Sort = (data, arg) => {
         setsortedName([])
@@ -41,14 +40,14 @@ const Fetch = () => {
 
     if (loading === true) {
         return (
-            <div className="container ml-5 mt-5" width="50">
-                <div class="spinner-border text-success" role="status">
-                    <p>Loading</p>
-
+            <div class="d-flex justify-content-center mt-5">
+                <div class="spinner-border" style={{ width: '5rem', height: '5rem' }} role="status">
+                    <span class="sr-only">Loading...</span>
                 </div>
-
+                <div class="spinner-grow" style={{ width: '5rem', height: '5rem' }} role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
             </div>
-
         )
     }
     return (
