@@ -3,6 +3,7 @@ import React, { Fragment } from 'react';
 const Table = ({ object }) => {
 
     return (
+    
         <Fragment>
             <div className="container mt-5">
                 <table className="table table-striped table-dark table-bordered " >
