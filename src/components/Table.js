@@ -2,11 +2,10 @@ import React, { Fragment } from 'react';
 
 const Table = ({ object }) => {
 
-    return (
-    
+    return (    
         <Fragment>
             <div className="container mt-5">
-                <table className="table table-striped table-dark table-bordered " >
+                <table className="table table-striped table-dark table-bordered" >
                     <thead>
                         <tr >
                             <td>Name</td>
@@ -15,8 +14,7 @@ const Table = ({ object }) => {
                             <td>Sport</td>
                         </tr>
                     </thead>
-                    {
-                        object.map(item => (
+                    {   object.map(item => (
                             <tbody key={item.id}>
                                 <tr>
                                     <td >{item.name}</td>
