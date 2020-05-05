@@ -13,9 +13,8 @@ export default function Fetch() {
     /* Functions to sort data */
 
     const Sort = (data, arg) => {
-        console.log(subscritors)
         data.sort((first, second) => (first[arg] > second[arg]) ? 1 : -1)        
-        setSubscritors([...data]); /*El gancho de efectos le permite realizar efectos secundarios en los componentes de la función*/
+        setSubscritors([...data]); 
     }  
     /*We are telling React that the component has to do something after rendering*/
 
